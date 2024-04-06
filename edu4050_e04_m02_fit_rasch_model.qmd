@@ -917,7 +917,7 @@ $$\theta_{p} \sim \text{Normal}(\mu, \sigma^2)$$
 
 - Los diagramas de items-personas incluyen a un histograma de las realizaciones del término $\theta_{p}$. Se les llama realizaciones, o predicciones porque son un término generado con el modelo, que no pre-existen a la base de datos. Son *representaciones* en algun sentido, de la variable latente que supone el modelo.
 
-```{r , echo=FALSE, eval=FALSE, warning=FALSE, out.height = '100%', fig.retina = 1}
+```{r , echo=TRUE, eval=TRUE, warning=FALSE, message = FALSE, error = FALSE, collapse = TRUE}
 #| code-fold: true
 
 # -----------------------------------------------
@@ -1176,7 +1176,7 @@ panel.border = element_rect(linetype = "solid", fill = NA)) +
 scale_x_continuous(name = expression(theta), limits = c(-4, 
         4), breaks = seq(-4, 4, 1)) + 
 scale_y_continuous(
-  name = expression(SE(theta)), 
+  name = expression(Total Score), 
   limits = c(0, 16), 
   breaks = seq(0, 16, 1)
   )
